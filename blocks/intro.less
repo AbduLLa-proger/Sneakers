@@ -1,0 +1,164 @@
+// main: ../style.less
+
+.intro {
+  width: 100%;
+  height: 100%;
+  min-height: 62.5rem;
+  background: url("images/shape.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  &-inner {
+    margin-top: 2.5rem;
+    padding-left: 0.2rem;
+    position: relative;
+    &-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &-subtitle {
+        position: absolute;
+        top: 95%;
+        margin-left: 5.5rem;
+      }
+    }
+  }
+  &-title {
+    text-transform: capitalize;
+    color: @color2;
+    font-size: 9.7rem;
+    letter-spacing: 0.4rem;
+    font-family: @font2;
+  }
+  &-sneaker-img {
+    width: 45rem;
+    height: 45rem;
+    position: absolute;
+    margin: 0 auto;
+    left: 0%;
+    right: 0%;
+    top: 20%;
+    bottom: 0;
+  }
+  &-subtitle {
+    font-size: 1.6rem;
+    color: @color2;
+    font-family: @font1;
+    text-transform: uppercase;
+    padding: 0.7rem 1.5rem;
+    background-color: @color11;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    border-radius: 2px;
+  }
+  &-bottom-container {
+    max-width: 1000px;
+    height: 38rem;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+  }
+  &-bottom-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    &:first-child {
+      width: 20%;
+      transform: rotate(270deg);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      right: 86%;
+      bottom: 30%;
+      font-family: @font1;
+      color: @color5;
+    }
+    &:last-child {
+      right: 7%;
+      bottom: 7%;
+    }
+  }
+
+  &-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.8rem 0.8rem;
+    transition: background 0.3s ease;
+    text-align: center;
+
+    &:first-child {
+      background-color: @color6;
+      color: @color8;
+      &:hover {
+        color: @color6;
+        background-color: @color7;
+        transition: background 0.3s ease;
+      }
+    }
+    &:nth-child(2) {
+      margin: 2rem 0;
+      background-color: @color7;
+      color: @color6;
+      &:hover {
+        background-color: @color6;
+        color: @color7;
+        transition: background 0.3s ease;
+      }
+    }
+
+    &-google,
+    &-youtube {
+      display: flex;
+      height: 3rem;
+      background-color: @color7;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    &-youtube {
+      margin-top: 2rem;
+      background-color: @color4;
+    }
+
+    &-google-inner {
+      background: url("@{img}white_google_plus.png");
+    }
+    &-youtube-inner {
+      background: url("@{img}white_youtube.png");
+    }
+
+    &-google-inner,
+    &-youtube-inner {
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 1.5rem;
+      height: 1.7rem;
+      transition: background 0.3s ease;
+    }
+
+    &-google:hover {
+      background-color: @color6;
+      transition: background 0.3s ease;
+      & .intro-icon-google-inner {
+        background: url("@{img}black_google_plus.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: background 0.3s ease;
+      }
+    }
+    &-youtube:hover {
+      background-color: @color6;
+      transition: background 0.3s ease;
+      & .intro-icon-youtube-inner {
+        background: url("@{img}blue_youtube.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: background 0.3s ease;
+      }
+    }
+  }
+}
