@@ -1,0 +1,109 @@
+// main: ../style.less
+
+.collection {
+  width: 100%;
+  height: 100%;
+  min-height: 44rem;
+  &-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    &-box {
+      height: 100%;
+      &:first-child {
+        width: 53%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        padding-left: 3rem;
+      }
+      &:last-child {
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-left: 3rem;
+      }
+      &-border {
+        &:first-child {
+          display: flex;
+          justify-content: center;
+          width: 30.5rem;
+          height: 32.2rem;
+          padding: 0.4rem 0;
+          box-shadow: 0px 0px 10px 0px #d3d3d6, 0px 0px 1px 0px #fff;
+          position: relative;
+          z-index: 200;
+          background-color: @color6;
+        }
+        &-color {
+          width: 29.7rem;
+          background-color: @color13;
+          position: relative;
+          left: 0.4%;
+          z-index: 200;
+        }
+        &:last-child {
+          width: 17rem;
+          height: 24rem;
+          position: absolute;
+          background: linear-gradient(
+            90deg,
+            rgb(150, 248, 220) 100%,
+            rgb(175, 250, 229) 50%,
+            rgba(174, 255, 232, 1) 0%
+          );
+          top: 45%;
+          right: 0;
+        }
+      }
+      &-title {
+        font-family: @font4;
+        color: @color7;
+        font-weight: 500;
+        opacity: 0.9;
+        font-size: 2.9rem;
+      }
+      &-text {
+        font-family: @font1;
+        color: @color5;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        font-size: 0.94rem;
+        line-height: 2;
+        padding-right: 7.4rem;
+        user-select: none;
+      }
+      &-block {
+        position: relative;
+        margin-left: 1rem;
+        & .button-box {
+          font-family: @font1;
+          padding: 0.8rem 1.6rem;
+          background-color: @color8;
+          border-radius: 2px;
+          text-transform: capitalize;
+          font-weight: 500;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 20%;
+            right: 6%;
+            width: 100%;
+            height: 100%;
+            border: 0.1rem solid @color11;
+          }
+        }
+      }
+      &-img {
+        position: absolute;
+        width: 27rem;
+        height: 31.7rem;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
