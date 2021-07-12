@@ -1,0 +1,200 @@
+//main: ../style.less
+
+@media (max-width: 1000px) {
+  .intro {
+    &-bottom-container {
+      max-width: 900px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .intro {
+    height: 56rem;
+    &-sneaker-img {
+      width: 38rem;
+      height: 38rem;
+      left: 9%;
+    }
+    &-bottom {
+      &-container {
+        max-width: 750px;
+      }
+      &-box:first-child {
+        width: 26%;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .intro {
+    height: 46rem;
+    &-inner {
+      margin-top: 1rem;
+      &-box-subtitle {
+        margin-left: 4rem;
+        & span {
+          padding: 1.5rem 7.5rem;
+          right: 2%;
+          top: 17%;
+        }
+      }
+    }
+    &-title {
+      font-size: 7.7rem;
+    }
+    &-subtitle {
+      font-size: 1.2rem;
+    }
+    &-sneaker-img {
+      width: 30rem;
+      height: 30rem;
+      left: 10%;
+      top: 36%;
+    }
+    &-bottom-container {
+      max-width: 600px;
+    }
+    &-bottom-box:first-child {
+      width: 30%;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .intro {
+    height: 40rem;
+    padding-top: 9rem;
+    & .container {
+      max-width: 48rem;
+    }
+    &-title {
+      font-size: 6rem;
+    }
+    &-subtitle {
+      font-size: 0.9rem;
+    }
+    &-inner-box-subtitle {
+      margin-left: 3rem;
+      & span {
+        padding: 1.2rem 6rem;
+      }
+    }
+    &-sneaker-img {
+      width: 25rem;
+      height: 25rem;
+    }
+    &-bottom {
+      &-container {
+        max-width: 50rem;
+      }
+      &-box:first-child {
+        right: 85%;
+      }
+      &-box:last-child {
+        right: 0%;
+      }
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .intro {
+    height: 34rem;
+    .container {
+      max-width: 39rem;
+    }
+    &-inner {
+      margin-top: 0;
+    }
+    &-sneaker-img {
+      width: 21rem;
+      height: 21rem;
+    }
+    &-bottom {
+      &-container {
+        max-width: 40rem;
+      }
+      &-box:first-child {
+        width: 40%;
+        top: 0;
+        right: 77%;
+        font-size: 0.7rem;
+      }
+    }
+    &-icon {
+      font-size: 1rem;
+      &-google,
+      &-youtube {
+        height: 2.7rem;
+      }
+      &-google-inner,
+      &-youtube-inner {
+        width: 1.1rem;
+        height: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .intro {
+    padding-top: 6rem;
+    height: 25.5rem;
+    & .container {
+      max-width: 30rem;
+    }
+    &-title {
+      font-size: 4rem;
+    }
+    &-inner-box-subtitle {
+      margin-left: 2rem;
+      & span {
+        padding: 0.8rem 4.2rem;
+        right: 3%;
+        top: 25%;
+      }
+    }
+    &-subtitle {
+      padding: 0.5rem 1rem;
+      font-size: 0.6rem;
+    }
+    &-sneaker-img {
+      width: 17rem;
+      height: 17rem;
+    }
+    &-bottom-box:first-child {
+      right: 80%;
+      font-size: 0.4rem;
+      width: 22%;
+      top: 55%;
+    }
+    &-bottom-box:last-child {
+      right: 7%;
+    }
+    &-icon {
+      padding: 0.5rem;
+      font-size: 0.7rem;
+      &:nth-child(2) {
+        margin: 1rem 0;
+      }
+      &-google {
+        height: 1.8rem;
+        &-inner {
+          width: 0.9rem;
+          height: 1rem;
+        }
+      }
+      &-youtube {
+        margin-top: 1rem;
+        height: 1.8rem;
+        &-inner {
+          width: 1rem;
+          height: 1.1rem;
+        }
+      }
+    }
+  }
+}

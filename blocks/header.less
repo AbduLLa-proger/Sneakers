@@ -1,4 +1,4 @@
-// main: ../style.less
+//main: ../style.less
 
 .header {
   position: absolute;
@@ -112,79 +112,6 @@
     letter-spacing: 0.1rem;
     & span {
       color: @color7;
-    }
-  }
-}
-
-@media (max-width: 1000px) {
-  .container {
-    max-width: 880px;
-  }
-}
-
-@media (max-width: 880px) {
-  .container {
-    max-width: 780px;
-  }
-  .header-box {
-    width: 22%;
-  }
-}
-
-@media (max-width: 800px) {
-  .container {
-    max-width: 700px;
-  }
-  .header-box {
-    width: 25%;
-  }
-}
-
-@media (max-width: 710px) {
-  .container {
-    max-width: 600px;
-  }
-  .header-box {
-    width: 29%;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    max-width: 500px;
-  }
-  .header-box {
-    width: 35%;
-  }
-}
-
-@media (max-width: 500px) {
-  .container {
-    max-width: 400px;
-  }
-  .header {
-    height: 20rem;
-    &-box {
-      width: 35%;
-      &:first-child {
-        align-items: flex-start;
-        padding-top: 1rem;
-      }
-      &:last-child {
-        align-items: flex-end;
-        flex-direction: column-reverse;
-        height: 60%;
-        width: 45%;
-      }
-      &-inner:first-child {
-        width: 30%;
-        height: 50%;
-      }
-      &-inner:nth-child(2) {
-        width: 30%;
-        height: 50%;
-        top: 2%;
-      }
     }
   }
 }

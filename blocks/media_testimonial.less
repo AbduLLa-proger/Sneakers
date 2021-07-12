@@ -1,0 +1,70 @@
+//main: ../style.less
+
+@media (max-width: 900px) {
+  .testimonial {
+    height: 25rem;
+    &-arrow {
+      top: 41%;
+    }
+    &-paragraph {
+      padding-left: 7rem;
+      padding-right: 7rem;
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .testimonial {
+    height: 21rem;
+    &-arrow:first-child,
+    &-arrow:nth-child(2) {
+      width: 5rem;
+    }
+    &-paragraph {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+@media (max-width: 515px) {
+  .testimonial-paragraph {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    &-text {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .testimonial-paragraph {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .testimonial {
+    height: 18rem;
+
+    &-paragraph {
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
+      &-title {
+        font-size: 2rem;
+      }
+      &-text {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+@media (max-width: 345px) {
+  .testimonial-arrow {
+    &:first-child,
+    &:nth-child(2) {
+      width: 3rem;
+    }
+  }
+}

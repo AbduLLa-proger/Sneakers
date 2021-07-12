@@ -1,0 +1,126 @@
+//main: ../style.less
+
+.side-nav-bar {
+  display: block;
+  width: 100%;
+  height: 9rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: @color16;
+  transition: 0.3s top ease;
+  &-inner {
+    display: block;
+    margin: 0 auto;
+    height: inherit;
+    text-align: center;
+    max-width: 110rem;
+    padding: 0 5%;
+    position: relative;
+    & .fad {
+      cursor: pointer;
+      position: absolute;
+      &:hover::after {
+        opacity: 1;
+        transition: 0.3s opacity ease;
+      }
+      &:hover::before {
+        opacity: 0.4;
+        transition: 0.3s opacity ease;
+      }
+    }
+    &-exit {
+      right: 0;
+      top: 35%;
+      font-size: 2.3rem;
+    }
+    &-form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: inherit;
+      & a {
+        text-transform: uppercase;
+        font-family: @font1;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        transition: 0.3s letter-spacing ease;
+        &:hover {
+          letter-spacing: 0.5rem;
+          transition: 0.3s letter-spacing ease;
+        }
+      }
+    }
+  }
+}
+
+.hide {
+  top: -35%;
+  transition: 0.3s top ease;
+}
+
+//MEDIA
+
+@media (max-width: 1145px) {
+  .side-nav-bar-inner {
+    max-width: 95rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .side-nav-bar-inner {
+    max-width: 86rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .side-nav-bar-inner {
+    max-width: 76rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .side-nav-bar-inner {
+    max-width: 65rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .side-nav-bar-inner {
+    max-width: 56rem;
+    padding: 0 7%;
+  }
+}
+
+@media (max-width: 565px) {
+  .side-nav-bar {
+    height: 7rem;
+    &-inner {
+      padding: 0 15%;
+      & .fad {
+        right: 6%;
+      }
+      &-form a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .side-nav-bar {
+    height: 11rem;
+    &-inner {
+      padding: 0 2%;
+      & .fad {
+        top: 5%;
+      }
+      &-form {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}

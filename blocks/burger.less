@@ -1,0 +1,376 @@
+//main: ../style.less
+
+.body {
+  background-color: #000;
+}
+
+label {
+  position: absolute;
+  color: @color15;
+  font-family: @font1;
+  font-size: 1.3rem;
+  pointer-events: none;
+  z-index: 20;
+  left: 0.5rem;
+  text-transform: capitalize;
+  transition: 0.3s all ease;
+}
+
+::placeholder {
+  color: #999999;
+}
+
+.input {
+  width: 19rem;
+  height: 4rem;
+  outline: 0;
+  border: 0;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding-left: 1rem;
+  &:focus ~ label,
+  &:valid ~ label {
+    color: rgba(53, 152, 220, 1);
+    transform: translateY(-100%);
+    transition: 0.3s all ease;
+  }
+}
+
+.sign-up {
+  &_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  &-form {
+    &-bottom_text {
+      position: absolute;
+      text-align: center;
+      margin-top: 2.5rem;
+      color: @color7;
+      font-family: @font2;
+      font-size: 1.2rem;
+      left: 0;
+      right: 0;
+      bottom: 3%;
+      & a:hover {
+        color: rgba(53, 152, 220, 1);
+        text-decoration: underline;
+      }
+    }
+    &_inner {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 45rem;
+      height: 57rem;
+      padding: 2% 2%;
+      border-radius: 20px;
+      background-color: @color6;
+      position: relative;
+    }
+    &_header {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1%;
+    }
+    &_title {
+      font-family: @font1;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    &_text {
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      color: #999999;
+    }
+    &-button {
+      &_container {
+        margin-top: 3rem;
+      }
+      &_text {
+        text-align: center;
+        margin-top: 3rem;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+    &_button {
+      border: 0;
+      cursor: pointer;
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+      background-color: rgba(53, 152, 220, 1);
+      padding: 10px 45px;
+      border-radius: 3px;
+      color: #fff;
+      box-shadow: 0 6px rgb(40, 140, 220), 0 3px 15px rgba(0, 0, 0, 0.5),
+        inset 0 1px rgba(255, 255, 255, 0),
+        inset 0 0 3px rgba(255, 255, 255, 0.3);
+      transition: background 0.3s ease;
+      &:hover {
+        background-color: #ffffff;
+        background: rgb(40, 140, 220)
+          linear-gradient(rgb(53, 150, 231), rgb(60, 160, 255) 80%);
+        color: #fff;
+        transition: background 0.3s ease;
+      }
+      &:active {
+        background: rgb(45, 140, 180)
+          linear-gradient(rgb(50, 160, 220) 20%, rgb(70, 150, 225));
+        box-shadow: 0 2px rgb(60, 150, 200), 0 1px 6px rgba(0, 0, 0, 0.4),
+          inset 0 1px rgba(255, 255, 255, 0.3),
+          inset 0 0 3px rgba(255, 255, 255, 0.5);
+        -webkit-transform: translate(0, 5px);
+        transform: translate(0, 5px);
+      }
+    }
+  }
+  &_line {
+    margin: 1.5rem 0;
+    width: 100%;
+    height: 0.1px;
+    background-color: #eeeeee;
+  }
+  &-main {
+    &_form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 28rem;
+      width: inherit;
+    }
+    &-form {
+      &_fullname {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: inherit;
+      }
+      &_Fname,
+      &_Sname {
+        display: flex;
+        position: relative;
+        align-items: center;
+      }
+    }
+  }
+  &_inputForm {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: inherit;
+    & .input {
+      width: inherit;
+    }
+  }
+
+  &-accept {
+    &_form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 25rem;
+      align-items: center;
+      margin-top: 3rem;
+    }
+    &-form {
+      &_button {
+        position: relative;
+        border: 0.1px solid #999999;
+        outline: none;
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+        background: #dedede;
+        box-shadow: 0 1px rgba(222, 222, 222, 1) inset,
+          0 3px 5px rgba(222, 222, 222, 1), 0 0 1px 1px rgba(200, 200, 200, 0.2);
+        &:hover {
+          background-color: #eeeeee;
+        }
+      }
+      &_text {
+        font-family: @font2;
+        font-size: 1.2rem;
+        color: #999999;
+        cursor: pointer;
+        & span {
+          color: rgba(53, 152, 220, 1);
+        }
+        &:hover span {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: @color15;
+  &_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 570px;
+    padding: 1% 0;
+    background-color: @color6;
+    border-radius: 20px;
+    &_header {
+      text-align: center;
+      margin-top: 3rem;
+      &_title {
+        font-family: @font1;
+        font-size: 3rem;
+        text-transform: capitalize;
+      }
+    }
+    &_middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 15rem;
+      width: 80%;
+      position: relative;
+      margin-top: 3rem;
+      &_links {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      &_bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 16rem;
+        width: 80%;
+        margin-top: 3rem;
+        text-align: center;
+        &_links {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+      }
+    }
+    &_submit {
+      text-transform: uppercase;
+      font-family: @font1;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: @color6;
+      border-radius: 20px;
+      letter-spacing: 0.1rem;
+      border: 0;
+      cursor: pointer;
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+      background-color: rgba(53, 152, 220, 1);
+      padding: 10px 45px;
+      box-shadow: 0 6px rgb(40, 140, 220), 0 3px 15px rgba(0, 0, 0, 0.5),
+        inset 0 1px rgba(255, 255, 255, 0),
+        inset 0 0 3px rgba(255, 255, 255, 0.3);
+      transition: background 0.3s ease;
+      &:hover {
+        background-color: #ffffff;
+        background: rgb(40, 140, 220)
+          linear-gradient(rgb(53, 150, 231), rgb(60, 160, 255) 80%);
+        color: #fff;
+        transition: background 0.3s ease;
+      }
+      &:active {
+        background: rgb(45, 140, 180)
+          linear-gradient(rgb(50, 160, 220) 20%, rgb(70, 150, 225));
+        box-shadow: 0 2px rgb(60, 150, 200), 0 1px 6px rgba(0, 0, 0, 0.4),
+          inset 0 1px rgba(255, 255, 255, 0.3),
+          inset 0 0 3px rgba(255, 255, 255, 0.5);
+        -webkit-transform: translate(0, 5px);
+        transform: translate(0, 5px);
+      }
+    }
+    &_subtext {
+      font-family: @font1;
+      color: @color7;
+      font-weight: 500;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      margin-top: 3rem;
+    }
+    &_bottom {
+      margin-top: 2rem;
+      text-align: center;
+      &_text {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-family: @font2;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+          color: rgba(53, 152, 220, 1);
+        }
+      }
+    }
+  }
+  &_input_form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    & .input {
+      width: inherit;
+    }
+  }
+  &_input_bottom_link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: @font2;
+    font-size: 1.1rem;
+    &:hover {
+      color: rgba(53, 152, 220, 1);
+      text-decoration: underline;
+    }
+  }
+  &_icons {
+    padding: 1.2rem;
+    border-radius: 50%;
+    color: @color6;
+    cursor: pointer;
+    transition: 0.3s background ease;
+    font-size: 1.4rem;
+    &:nth-child(1) {
+      padding: 1.2rem 1.5rem;
+      background-color: @facebook_background;
+    }
+    &:hover:nth-child(1) {
+      background-color: @color7;
+      color: @facebook_background;
+      transition: 0.3s background ease;
+    }
+    &:nth-child(2) {
+      margin: 0 1rem;
+      background-color: @twitter_background;
+    }
+    &:hover:nth-child(2) {
+      background-color: @color7;
+      color: @twitter_background;
+      transition: 0.3s background ease;
+    }
+    &:nth-child(3) {
+      padding: 1.2rem 1.3rem;
+      background-color: @google_background;
+    }
+    &:hover:nth-child(3) {
+      color: @google_background;
+      background-color: @color7;
+      transition: 0.3s background ease;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+//main: ../style.less
+
+@media (max-width: 900px) {
+  .arrivals {
+    height: 80rem;
+    &-sneakers {
+      grid-template-columns: auto auto;
+      margin-right: 0;
+      &-box {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .arrivals {
+    height: 73rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .arrivals {
+    height: 150rem;
+    &-title {
+      text-align: center;
+      margin: 0;
+    }
+    &-sneakers {
+      display: flex;
+      flex-direction: column;
+      &-box-inner {
+        width: 18rem;
+        height: 23rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .arrivals {
+    height: 140rem;
+  }
+}

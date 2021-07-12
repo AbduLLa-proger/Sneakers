@@ -12,6 +12,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   font-size: 10px;
 }
 
@@ -27,14 +28,11 @@ h6 {
 
 a {
   text-decoration: none;
+  color: @color7;
 }
 button {
   border: 0;
   outline: none;
-}
-input {
-  outline: none;
-  border: 0;
 }
 
 .container {
@@ -63,25 +61,15 @@ input {
   }
 }
 
-::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
+::-webkit-input-placeholder, /* Chrome/Opera/Safari */
+::-moz-placeholder, /* Firefox 19+ */
+:-ms-input-placeholder /* IE 10+ */ {
   color: @color15;
   font-family: @font1;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: @color15;
-  font-family: @font1;
-  font-size: 1.1rem;
-}
-:-ms-input-placeholder {
-  /* IE 10+ */
-  color: @color15;
-  font-family: @font1;
-  font-size: 1.1rem;
-}
-@import "blocks/chevron.less";
+
+@import "blocks/side-nav-bar.less";
 @import "blocks/header.less";
 @import "blocks/intro.less";
 @import "blocks/products.less";
@@ -90,3 +78,14 @@ input {
 @import "blocks/testimonial.less";
 @import "blocks/blog.less";
 @import "blocks/footer.less";
+
+//MEDIA
+
+@import "blocks/media_header.less";
+@import "blocks/media_intro.less";
+@import "blocks/media_products.less";
+@import "blocks/media_arrivals.less";
+@import "blocks/media_collection.less";
+@import "blocks/media_testimonial.less";
+@import "blocks/media_blog.less";
+@import "blocks/media_footer.less";

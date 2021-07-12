@@ -1,0 +1,239 @@
+//main: ../style.less
+
+@media (max-width: 900px) {
+  .blog {
+    &-inner {
+      &-box {
+        &:first-child {
+          padding-left: 0;
+        }
+        &-border {
+          left: 0;
+        }
+        &-text {
+          padding-right: 0;
+          & + div {
+            right: 0;
+          }
+        }
+        &-content-border {
+          left: 42%;
+          bottom: 33%;
+          &-inner {
+            width: 21.3rem;
+            height: 16.5rem;
+            & span {
+              top: 35%;
+            }
+          }
+        }
+        &-controller {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .blog {
+    height: 95rem;
+    padding-top: 3rem;
+    & .container {
+      max-width: 700px;
+    }
+    &-inner {
+      flex-direction: column;
+      margin-top: 2rem;
+      height: 80rem;
+      &-box {
+        &:first-child {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 78%;
+        }
+        &:first-child &-controller {
+          display: block;
+          top: 89%;
+          right: 11%;
+        }
+        &-border {
+          border: 0.7rem solid @color14;
+          left: 15%;
+          width: 22rem;
+          height: 27.5rem;
+        }
+        &-img {
+          width: 33.2rem;
+          height: 35.2rem;
+          &-border {
+            left: 0;
+            margin-top: 6rem;
+            width: 34rem;
+            height: 36rem;
+          }
+        }
+        &-content-border {
+          left: 27%;
+          bottom: 17%;
+          &-inner {
+            width: 24rem;
+            height: 17rem;
+            & span {
+              font-size: 10.5rem;
+              letter-spacing: 0.5rem;
+              top: 32%;
+            }
+          }
+        }
+        &:last-child {
+          flex-direction: column;
+          width: 70%;
+          height: 21%;
+          margin: 0 auto;
+          padding: 0 3rem;
+          padding-top: 1rem;
+          border-radius: 15px;
+          box-shadow: 55px 55px 15px -60px @color17,
+            -55px -55px 15px -60px @color17;
+          position: relative;
+        }
+        &-text + div {
+          top: 12rem;
+          right: 2rem;
+        }
+        &:last-child &-controller {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .blog-inner-box-content-border {
+    transform: rotateX(0deg);
+    left: 0;
+    bottom: 3%;
+    &-inner {
+      width: auto;
+      height: auto;
+      background: @color6;
+      & span {
+        top: 0;
+        right: 0;
+        color: @color7;
+      }
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .blog-inner-box-border {
+    left: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog-inner-box {
+    &-border {
+      width: 20.5rem;
+      height: 24.5rem;
+    }
+    &-img {
+      width: 29.2rem;
+      height: 31.2rem;
+      &-border {
+        width: 30rem;
+        height: 32rem;
+      }
+    }
+    &-text {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .blog {
+    height: 85rem;
+    &-inner {
+      height: 70rem;
+      &-box {
+        &:first-child {
+          height: 75rem;
+        }
+        &-border {
+          width: 17.5rem;
+          height: 21.5rem;
+        }
+        &-img {
+          width: 25.2rem;
+          height: 27.2rem;
+          &-border {
+            width: 26rem;
+            height: 28rem;
+          }
+        }
+        &-controller {
+          top: 90%;
+        }
+        &:last-child {
+          height: 22rem;
+        }
+        &-text {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .button-box {
+    padding: 0.5rem 1.1rem;
+  }
+  .blog-inner-box:last-child {
+    padding: 0 1rem;
+    padding-top: 1rem;
+  }
+  .blog-inner-box-text + div {
+    top: 12.5rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 345px) {
+  .blog {
+    height: 73rem;
+    &-inner {
+      height: 57rem;
+      &-box {
+        &-border {
+          width: 14.5rem;
+          height: 17.5rem;
+          top: 5%;
+        }
+        &-img-border {
+          width: 21rem;
+          height: 23rem;
+        }
+        &-content-border-inner span {
+          font-size: 8.5rem;
+        }
+        &-controller {
+          top: 87%;
+        }
+        &:last-child {
+          height: 16rem;
+        }
+        &-img {
+          width: 20.2rem;
+          height: 22.2rem;
+        }
+      }
+    }
+  }
+}

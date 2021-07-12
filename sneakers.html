@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/13565a46c4.js" defer crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blocks/icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
           <div class="header-box-inner">
             <span></span>
           </div>
-          <div class="header-box-inner">
+          <div class="header-box-inner" id="headerBtn">
             <div class="header-box-burger-circle">
               <span></span>
               <span></span>
@@ -40,9 +41,22 @@
 
   <!-- HEADER -->
 
+  <div class="side-nav-bar hide">
+    <div class="side-nav-bar-inner">
+      <i class="side-nav-bar-inner-exit fad fa-chevron-double-up"></i>
+      <div class="side-nav-bar-inner-form">
+        <a href="#" class="side-nav-bar-inner-form-links" data-scroll="#home">home</a>
+        <a href="#" class="side-nav-bar-inner-form-links" data-scroll="#products">products</a>
+        <a href="#" class="side-nav-bar-inner-form-links" data-scroll="#arrivals">arrivals</a>
+        <a href="#" class="side-nav-bar-inner-form-links" data-scroll="#blog">blog</a>
+        <a href="#" class="side-nav-bar-inner-form-links" data-scroll="#contacts">contacts</a>
+      </div>
+    </div>
+  </div>
+
   <!-- INTRO -->
 
-  <section class="intro">
+  <section class="intro" id="home">
     <div class="container">
       <div class="intro-inner">
         <div class="intro-inner-box">
@@ -60,14 +74,14 @@
         Nike, originally known as Blue Ribbon Sports 
       was founded by University of Oregon track athlete Phil Knight.</div>
       <div class="intro-bottom-box">
-        <i class="fab fa-twitter intro-icon"></i>
-        <i class="fab fa-facebook-f intro-icon"></i>
-        <div class="intro-icon-google">
-          <div class="intro-icon-google-inner"></div>
-        </div>
-        <div class="intro-icon-youtube">
-          <div class="intro-icon-youtube-inner"></div>
-        </div>
+        <a target="blank" href="https://twitter.com/?lang=ru" class="fab fa-twitter intro-icon"></a>
+        <a target="blank" href="https://www.facebook.com/" class="fab fa-facebook-f intro-icon"></a>
+        <span class="intro-icon-google">
+          <a target="blank" href="https://www.google.com/" class="intro-icon-google-inner"></a>
+        </span>
+        <span class="intro-icon-youtube">
+          <a target="blank" href="https://www.youtube.com/" class="intro-icon-youtube-inner"></a>
+        </span>
       </div>
     </div>
   </section>
@@ -76,7 +90,7 @@
 
   <!-- PRODUCTS -->
 
-  <section class="products">
+  <section class="products" id="products">
     <div class="container">
       <div class="products-inner">
         <div class="products-inner-box">
@@ -102,7 +116,7 @@
 
   <!-- ARRIVALS -->
 
-  <section class="arrivals">
+  <section class="arrivals" id="arrivals">
     <div class="container">
       <h3 class="arrivals-title">popular arrivals</h3>
       <div class="arrivals-sneakers">
@@ -216,7 +230,7 @@
 
   <!-- BLOG -->
 
-  <section class="blog">
+  <section class="blog" id="blog">
     <div class="container">
       <h4 class="blog-title">latest blog</h4>
       <div class="blog-inner">
@@ -225,7 +239,21 @@
           <div class="blog-inner-box-img-border">
             <img src="images/customer5.png" alt="" class="blog-inner-box-img">
           </div>
-          <div class="blog-inner-box-content-border"><span>nike</span></div>
+          <div class="blog-inner-box-content-border">
+            <div class="blog-inner-box-content-border-inner">
+              <span>nike</span>
+            </div>
+          </div>
+          <div class="blog-inner-box-controller">
+            <span class="blog-inner-box-controller-circle"></span>
+            <span class="blog-inner-box-controller-circle"></span>
+            <span class="blog-inner-box-controller-circle"></span>
+            <span class="blog-inner-box-controller-line"></span>
+            <span class="blog-inner-box-controller-ring"></span>
+            <span class="blog-inner-box-controller-page">01 / 06</span>
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+          </div>
         </div>
 
         <div class="blog-inner-box">
@@ -257,7 +285,7 @@
 
   <!-- FOOTER -->
 
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="container">
       <div class="footer_line"></div>
       <div class="footer-inner">
@@ -309,7 +337,6 @@
 
   <!-- FOOTER -->
 
-
-    <script src="app.js" defer></script>
+  <script src="Javascript/sneakers.js" defer></script>
 </body>
 </html>
