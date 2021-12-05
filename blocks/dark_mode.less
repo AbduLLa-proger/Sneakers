@@ -1,0 +1,272 @@
+//main: ../style.less
+
+.dark_mode {
+  background: @color22;
+  & .side-nav-bar {
+    background: @color20;
+  }
+  & .side-nav-bar-inner-form a {
+    color: white;
+  }
+
+  & .side-nav-bar-inner {
+    & .fad::before {
+      color: white;
+      opacity: 1;
+      transition: 0.3s ease color;
+    }
+    & .fad:hover::before {
+      color: black;
+      transition: 0.3s ease color;
+    }
+    & .fad::after {
+      color: black;
+      transition: 0.3s ease color;
+    }
+    & .fad:hover::after {
+      color: white;
+      transition: 0.3s ease color;
+    }
+  }
+
+  & .button-box {
+    background: @color20;
+    color: white;
+    &::before {
+      border-color: @color20;
+    }
+  }
+
+  & .header-box-inner:first-child span,
+  & .header-box-inner:nth-child(2) span {
+    border-color: white;
+  }
+
+  & .header-box-burger-circle {
+    background-color: white;
+    &:hover {
+      background-color: black;
+      transition: 0.3 ease all;
+      & span {
+        background-color: white;
+        transition: 0.3 ease all;
+      }
+    }
+  }
+
+  & .header-box-burger-circle span {
+    background-color: black;
+  }
+
+  & .header-icon {
+    background: url("./images/carting1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  & .header-title {
+    color: @color20;
+    & span {
+      color: white;
+    }
+  }
+
+  & .intro {
+    background: url("./images/shape1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  & .intro-title {
+    color: white;
+    text-shadow: 5px 5px black;
+  }
+
+  & .intro-subtitle {
+    background-color: @color20;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+  & .intro-inner-box-subtitle span {
+    border-color: @color20;
+  }
+
+  & .intro-bottom-box:first-child {
+    color: white;
+  }
+
+  & .intro-icon:first-child {
+    background-color: black;
+    color: @color20;
+    transition: 0.3s ease all;
+    &:hover {
+      transition: 0.3s ease all;
+      background-color: white;
+      color: black;
+    }
+  }
+
+  & .products,
+  & .collection,
+  & .blog {
+    box-shadow: 0px -90px 110px -140px #000000;
+  }
+
+  & .products-inner-box:first-child {
+    box-shadow: 0px 0px 10px 0px black;
+  }
+
+  & .products-inner-box-block-title {
+    color: white;
+  }
+
+  & .products-inner-box-border {
+    background: transparent;
+  }
+
+  & .arrivals-title {
+    color: white;
+  }
+
+  & .arrivals-sneakers-box-hover {
+    background-color: @color20;
+  }
+
+  & .arrivals-sneakers-box-description-name {
+    color: white;
+  }
+
+  & .collection-inner {
+    padding-top: 3vw;
+  }
+
+  & .collection-inner-box-title {
+    color: white;
+  }
+
+  & .collection-inner-box-border:first-child {
+    box-shadow: 0px 0px 10px 0px black;
+    background-color: transparent;
+  }
+
+  & .collection-inner-box-border:last-child {
+    background: @color20;
+  }
+
+  & .testimonial {
+    background: @color22;
+  }
+
+  & .testimonial-paragraph-title {
+    color: white;
+  }
+
+  & .blog-title {
+    color: white;
+  }
+
+  & .blog-inner-box-title {
+    color: white;
+  }
+
+  & .blog-inner-box-img-border {
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 0px black;
+  }
+
+  & .blog-inner-box-content-border-inner {
+    background: @color20;
+  }
+
+  & .blog-inner-box-content-border-inner span {
+    color: @color7;
+    opacity: 1;
+  }
+
+  & .blog-inner-box-controller-page {
+    color: white;
+  }
+  & .blog-inner-box-controller-circle-click-background {
+    background-color: @color21;
+  }
+
+  & .blog-inner-box-controller .fas {
+    color: white;
+    &:hover {
+      color: @color20;
+    }
+  }
+
+  & .blog-inner-box-controller-circle {
+    background-color: white;
+    &:hover {
+      background-color: @color20;
+    }
+    &-click-background {
+      background-color: @color21;
+    }
+  }
+
+  & .blog-inner-box-controller-ring {
+    border-color: @color20;
+  }
+
+  & .footer-button-submit {
+    background-color: @color20;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: @color20;
+    }
+  }
+
+  & .footer-input {
+    box-shadow: 0px 0px 10px 0px black;
+  }
+
+  & .footer-inner-box-social-icons .fab:hover {
+    color: @color20;
+  }
+}
+
+@media (max-width: 700px) {
+  .dark_mode {
+    & .blog-inner-box-content-border {
+      top: -2%;
+      &-inner {
+        background: transparent;
+        & span {
+          text-shadow: 5px 5px @color20;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .dark_mode .collection-inner-box:first-child {
+    box-shadow: 55px 55px 15px -60px black, -55px -55px 15px -60px black;
+  }
+}
+
+@media (max-width: 450px) {
+  .dark_mode {
+    & .intro-title {
+      text-shadow: 3px 3px black;
+    }
+    & .intro-subtitle {
+      text-shadow: 1px 2px black;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .dark_mode {
+    & .intro-title {
+      text-shadow: 3px 3px black;
+    }
+    & .intro-subtitle {
+      text-shadow: -1px 1px black;
+    }
+  }
+}

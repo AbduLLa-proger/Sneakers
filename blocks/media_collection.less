@@ -77,8 +77,8 @@
           padding-top: 1rem;
           border-radius: 15px;
           position: relative;
-          box-shadow: 55px 55px 15px -60px @color17,
-            -55px -55px 15px -60px @color17;
+          box-shadow: 55px 55px 15px -60px @color13,
+            -55px -55px 15px -60px @color13;
         }
         &:last-child {
           width: 100%;
@@ -189,6 +189,49 @@
       }
       &-color {
         width: 19rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .collection {
+    height: 57rem;
+    padding: 4rem 0;
+    &-inner-box {
+      &:first-child {
+        height: 17rem;
+      }
+      &-title {
+        font-size: 2rem;
+      }
+      &-text {
+        font-size: 0.7rem;
+      }
+      &-block {
+        top: 13.5rem;
+      }
+      &:last-child {
+        height: 26rem;
+      }
+      &-border {
+        &:first-child {
+          width: 17rem;
+          height: 19rem;
+        }
+        &-color {
+          width: 16rem;
+        }
+        &:last-child {
+          top: 7.5rem;
+          width: 9rem;
+          height: 14rem;
+          right: 5rem;
+        }
+      }
+      &-img {
+        width: 14rem;
+        height: 18rem;
       }
     }
   }

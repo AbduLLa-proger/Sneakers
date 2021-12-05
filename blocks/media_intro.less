@@ -148,6 +148,7 @@
     }
     &-title {
       font-size: 4rem;
+      letter-spacing: 0.1rem;
     }
     &-inner-box-subtitle {
       margin-left: 2rem;
@@ -178,6 +179,9 @@
       padding: 0.5rem;
       font-size: 0.7rem;
       &:nth-child(2) {
+        margin-top: 1rem;
+      }
+      &:nth-child(3) {
         margin: 1rem 0;
       }
       &-google {
@@ -194,6 +198,78 @@
           width: 1rem;
           height: 1.1rem;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .header-box-burger-circle span:first-child {
+    height: 0.1rem;
+  }
+  .header-box-burger-circle span:last-child {
+    top: 60%;
+  }
+}
+
+@media (max-width: 280px) {
+  .intro {
+    padding-top: 3.8rem;
+    height: 17.5rem;
+    & .container {
+      max-width: 23rem;
+    }
+    &-title {
+      font-size: 3rem;
+      letter-spacing: 0.1rem;
+    }
+    &-subtitle {
+      padding: 0.3rem 0.7rem;
+      font-size: 0.4rem;
+      letter-spacing: 0.5px;
+    }
+    &-inner-box-subtitle span {
+      padding: 0.44rem 2.7rem;
+      border: 0.1rem solid @color9;
+    }
+    &-sneaker-img {
+      width: 12rem;
+      height: 12rem;
+      left: 8%;
+      top: 20%;
+    }
+    &-bottom-box:first-child {
+      right: 81%;
+      font-size: 0.3rem;
+      width: 24%;
+      top: 50%;
+    }
+    &-icon:first-child {
+      font-size: 0.5rem;
+    }
+    &-icon:nth-child(2) {
+      font-size: 0.5rem;
+      padding: 0.5rem 0rem;
+      margin-top: 0.8rem;
+    }
+    &-icon:nth-child(3) {
+      padding: 0.49rem 0.6rem;
+      font-size: 0.6rem;
+      margin: 0.7rem 0;
+    }
+    &-icon-google {
+      height: 1.5rem;
+      &-inner {
+        width: 0.6rem;
+        height: 0.7rem;
+      }
+    }
+    &-icon-youtube {
+      height: 1.6rem;
+      margin-top: 0.8rem;
+      &-inner {
+        width: 0.7rem;
+        height: 0.8rem;
       }
     }
   }

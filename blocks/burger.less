@@ -1,7 +1,7 @@
 //main: ../style.less
 
 .body {
-  background-color: #000;
+  background-color: black;
 }
 
 label {
@@ -17,7 +17,7 @@ label {
 }
 
 ::placeholder {
-  color: #999999;
+  color: @color19;
 }
 
 .input {
@@ -25,7 +25,7 @@ label {
   height: 4rem;
   outline: 0;
   border: 0;
-  background-color: #f2f2f2;
+  background-color: @color22;
   border-radius: 5px;
   padding-left: 1rem;
   &:focus ~ label,
@@ -85,7 +85,7 @@ label {
     &_text {
       font-family: "Roboto", sans-serif;
       font-size: 12px;
-      color: #999999;
+      color: @color19;
     }
     &-button {
       &_container {
@@ -94,7 +94,7 @@ label {
       &_text {
         text-align: center;
         margin-top: 3rem;
-        color: #fff;
+        color: white;
         font-family: "Roboto", sans-serif;
       }
     }
@@ -105,16 +105,16 @@ label {
       background-color: rgba(53, 152, 220, 1);
       padding: 10px 45px;
       border-radius: 3px;
-      color: #fff;
+      color: white;
       box-shadow: 0 6px rgb(40, 140, 220), 0 3px 15px rgba(0, 0, 0, 0.5),
         inset 0 1px rgba(255, 255, 255, 0),
         inset 0 0 3px rgba(255, 255, 255, 0.3);
       transition: background 0.3s ease;
       &:hover {
-        background-color: #ffffff;
+        background-color: white;
         background: rgb(40, 140, 220)
           linear-gradient(rgb(53, 150, 231), rgb(60, 160, 255) 80%);
-        color: #fff;
+        color: white;
         transition: background 0.3s ease;
       }
       &:active {
@@ -132,7 +132,7 @@ label {
     margin: 1.5rem 0;
     width: 100%;
     height: 0.1px;
-    background-color: #eeeeee;
+    background-color: @color21;
   }
   &-main {
     &_form {
@@ -180,22 +180,22 @@ label {
     &-form {
       &_button {
         position: relative;
-        border: 0.1px solid #999999;
+        border: 0.1px solid @color19;
         outline: none;
         cursor: pointer;
         width: 12px;
         height: 12px;
-        background: #dedede;
+        background: @color22;
         box-shadow: 0 1px rgba(222, 222, 222, 1) inset,
           0 3px 5px rgba(222, 222, 222, 1), 0 0 1px 1px rgba(200, 200, 200, 0.2);
         &:hover {
-          background-color: #eeeeee;
+          background-color: @color21;
         }
       }
       &_text {
         font-family: @font2;
         font-size: 1.2rem;
-        color: #999999;
+        color: @color19;
         cursor: pointer;
         & span {
           color: rgba(53, 152, 220, 1);
@@ -279,10 +279,10 @@ label {
         inset 0 0 3px rgba(255, 255, 255, 0.3);
       transition: background 0.3s ease;
       &:hover {
-        background-color: #ffffff;
+        background-color: white;
         background: rgb(40, 140, 220)
           linear-gradient(rgb(53, 150, 231), rgb(60, 160, 255) 80%);
-        color: #fff;
+        color: white;
         transition: background 0.3s ease;
       }
       &:active {

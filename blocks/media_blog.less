@@ -36,6 +36,12 @@
 }
 
 @media (max-width: 780px) {
+  .dark_mode {
+    & .blog-inner-box:last-child {
+      box-shadow: 55px 55px 15px -60px black, -55px -55px 15px -60px black;
+    }
+  }
+
   .blog {
     height: 95rem;
     padding-top: 3rem;
@@ -60,7 +66,7 @@
           right: 11%;
         }
         &-border {
-          border: 0.7rem solid @color14;
+          border: 0.7rem solid @color11;
           left: 15%;
           width: 22rem;
           height: 27.5rem;
@@ -96,8 +102,8 @@
           padding: 0 3rem;
           padding-top: 1rem;
           border-radius: 15px;
-          box-shadow: 55px 55px 15px -60px @color17,
-            -55px -55px 15px -60px @color17;
+          box-shadow: 55px 55px 15px -60px @color13,
+            -55px -55px 15px -60px @color13;
           position: relative;
         }
         &-text + div {
@@ -120,11 +126,11 @@
     &-inner {
       width: auto;
       height: auto;
-      background: @color6;
+      background: @color5;
       & span {
         top: 0;
         right: 0;
-        color: @color7;
+        color: @color6;
       }
     }
   }
@@ -232,6 +238,57 @@
         &-img {
           width: 20.2rem;
           height: 22.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .blog {
+    height: 67rem;
+    padding-top: 2rem;
+    &-title {
+      font-size: 2.7rem;
+    }
+    &-inner {
+      margin-top: 0;
+      height: 60rem;
+      &-box {
+        &:first-child {
+          height: 40rem;
+        }
+        &:last-child {
+          height: 14.5rem;
+          width: 22rem;
+          margin-top: 2rem;
+        }
+        &-border {
+          border: 0.4rem solid @color11;
+          top: 7%;
+          width: 11rem;
+          height: 15rem;
+        }
+        &-img {
+          width: 17.2rem;
+          height: 18.2rem;
+          &-border {
+            width: 18rem;
+            height: 19rem;
+            margin-top: 5rem;
+          }
+        }
+        &-content-border {
+          bottom: 0%;
+          &-inner span {
+            font-size: 7rem;
+          }
+        }
+        &-text {
+          font-size: 0.7rem;
+          & + div {
+            top: 11.5rem;
+          }
         }
       }
     }

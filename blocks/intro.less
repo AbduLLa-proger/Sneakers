@@ -22,7 +22,7 @@
         top: 95%;
         margin-left: 5.5rem;
         & span {
-          border: 0.2rem solid @color11;
+          border: 0.2rem solid @color9;
           padding: 1.8rem 9rem;
           position: absolute;
           right: 4%;
@@ -33,7 +33,7 @@
   }
   &-title {
     text-transform: capitalize;
-    color: @color2;
+    color: @color1;
     font-size: 9.7rem;
     letter-spacing: 0.4rem;
     font-family: @font2;
@@ -50,11 +50,11 @@
   }
   &-subtitle {
     font-size: 1.6rem;
-    color: @color2;
+    color: @color1;
     font-family: @font1;
     text-transform: uppercase;
     padding: 0.7rem 1.5rem;
-    background-color: @color11;
+    background-color: @color9;
     font-weight: 700;
     letter-spacing: 0.1rem;
     border-radius: 2px;
@@ -80,7 +80,7 @@
       right: 86%;
       bottom: 40%;
       font-family: @font1;
-      color: @color5;
+      color: @color4;
     }
     &:last-child {
       right: 7%;
@@ -97,21 +97,32 @@
     text-align: center;
 
     &:first-child {
-      background-color: @color6;
-      color: @color8;
+      background-color: @color5;
+      color: @color9;
       &:hover {
-        color: @color6;
-        background-color: @color7;
+        color: @color5;
+        background-color: @color6;
         transition: background 0.3s ease;
       }
     }
     &:nth-child(2) {
+      margin-top: 2rem;
+      background-color: @color6;
+      color: @color5;
+      &:hover {
+        background-color: @color5;
+        color: @color6;
+        transition: background 0.3s ease;
+      }
+    }
+
+    &:nth-child(3) {
       margin: 2rem 0;
-      background-color: @color7;
+      background-color: @color5;
       color: @color6;
       &:hover {
         background-color: @color6;
-        color: @color7;
+        color: @color5;
         transition: background 0.3s ease;
       }
     }
@@ -120,7 +131,7 @@
     &-youtube {
       display: flex;
       height: 3rem;
-      background-color: @color7;
+      background-color: @color6;
       border-radius: 50%;
       justify-content: center;
       align-items: center;
@@ -129,7 +140,7 @@
     }
     &-youtube {
       margin-top: 2rem;
-      background-color: @color4;
+      background-color: @color3;
     }
 
     &-google-inner {
@@ -149,7 +160,7 @@
     }
 
     &-google:hover {
-      background-color: @color6;
+      background-color: @color5;
       transition: background 0.3s ease;
       & .intro-icon-google-inner {
         background: url("@{img}black_google_plus.png");
@@ -159,7 +170,7 @@
       }
     }
     &-youtube:hover {
-      background-color: @color6;
+      background-color: @color5;
       transition: background 0.3s ease;
       & .intro-icon-youtube-inner {
         background: url("@{img}blue_youtube.png");

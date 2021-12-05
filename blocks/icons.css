@@ -85,6 +85,14 @@
   content: "\10f325";
 }
 
+.fa-moon:before {
+  content: '\f186';
+}
+
+.fa-google:before {
+  content: "\f1a0"; 
+}
+
 .google-plus {
   cursor: pointer;
   background: url("../images/google-plus-logo.png") center no-repeat;
